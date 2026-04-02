@@ -4,7 +4,7 @@ A minimal [Model Context Protocol](https://modelcontextprotocol.io/) server temp
 
 ## What's included
 
-- A working MCP server using [FastMCP](https://gofastmcp.com/) with Streamable HTTP transport
+- A working MCP server using the [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk) with Streamable HTTP transport
 - Bearer token authentication via `MCP_API_TOKEN` (auto-generated on deploy)
 - One example tool (`hello`) to show the pattern
 - A `/health` endpoint for Render's health checks
@@ -149,5 +149,5 @@ CLAUDE.md              Pointer to AGENTS.md for Claude Code
 ## Learn more
 
 - [MCP specification](https://spec.modelcontextprotocol.io/)
-- [FastMCP documentation](https://gofastmcp.com/)
+- [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)
 - [Render Blueprints](https://render.com/docs/infrastructure-as-code)

@@ -1,6 +1,6 @@
 # MCP Server (Python) — Agent Guide
 
-This is a remote MCP server built with [FastMCP](https://gofastmcp.com/) and deployed on [Render](https://render.com). It uses Streamable HTTP transport and runs stateless — no session management.
+This is a remote MCP server built with the [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk) and deployed on [Render](https://render.com). It uses Streamable HTTP transport and runs stateless — no session management.
 
 ## Project layout
 
@@ -32,7 +32,7 @@ def your_tool_name(param: str, count: int = 10) -> str:
 
 - **snake_case** for tool function names
 - Always include a **docstring** — MCP clients surface it to LLMs as the tool description
-- Use **type hints** for all parameters and the return type — FastMCP generates the JSON schema from them
+- Use **type hints** for all parameters and the return type — the SDK generates the JSON schema from them
 - Parameters with defaults become optional in the schema
 - Return a string. For structured data, return `json.dumps(...)`.
 
@@ -95,6 +95,6 @@ When adding a new tool, add a corresponding test case that calls the tool via MC
 
 ## References
 
-- [FastMCP docs](https://gofastmcp.com/)
+- [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)
 - [MCP specification](https://spec.modelcontextprotocol.io/)
 - [Render Blueprints](https://render.com/docs/infrastructure-as-code)
